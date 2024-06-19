@@ -68,12 +68,6 @@ div.profile_page.has_profile_background.full_width_background {
 	background-size: 100%;
 }
 
-@media ( max-width: 1920px )
-{
-	div.profile_page.has_profile_background {
-		background-size: auto;
-	}
-}
 
 body.profile_page.has_profile_background {
 	background-color: #000000;
@@ -98,26 +92,6 @@ body.profile_page.has_profile_background {
 div.profile_page.has_profile_background.full_width_background .profile_animated_background > video {
 	width: 100%;
 }
-
-@media ( max-width: 1920px )
-{
-	div.profile_page.has_profile_background.full_width_background .profile_animated_background > video {
-		width: 1920px;
-	}
-}
-
-body.profile_page.flat_page #footer_spacer {
-	margin-top: 0;
-}
-
-/* this is a workaround for webkit centering bug with backgrounds that are larger than the window */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	div.profile_page.has_profile_background {
-		background-position: 49.999% 0;
-	}
-}
-
-
 
 .profile_header_bg {
 	position: relative;
@@ -1416,12 +1390,12 @@ html.responsive .showcase_gamecollector_games .showcase_gamecollector_game:nth-c
 }
 
 .myworkshop_showcase_header {
-	/* 620 x 58 */
+
 	width: 600px;
 	height: 38px;
 	padding: 10px;
 	line-height: 38px;
-	/*background-image: url( 'https://community.akamai.steamstatic.com/public/images/profile/profile_showcase_myworkshop.png' );*/
+
 
 	margin: 10px;
 }
@@ -1434,7 +1408,7 @@ html.responsive .showcase_gamecollector_games .showcase_gamecollector_game:nth-c
 .myworkshop_showcase_header .myworkshop_playerName {
 	font-size: 24px;
 			font-family: "Motiva Sans", Sans-serif;
-		font-weight: 200; /* thin */
+		font-weight: 200; 
 
 			color: #ffffff;
 }
@@ -1512,9 +1486,6 @@ html.responsive .showcase_gamecollector_games .showcase_gamecollector_game:nth-c
     padding: 8px;
     border-radius: 5px;
 
-	/*background: -webkit-linear-gradient( left, #000000 5%,#282828 95%);
-	background: linear-gradient( to right, #000000 5%,#282828 95%);
-*/
 }
 
 .myguide_showcase_item_ctn {
@@ -1566,7 +1537,7 @@ html.responsive .showcase_gamecollector_games .showcase_gamecollector_game:nth-c
 }
 
 .guide_showcase_item_content {
-	overflow: hidden;	/* prevents wrapping below image */
+	overflow: hidden;
 }
 
 @media screen and (max-width: 460px) {
@@ -1786,7 +1757,6 @@ html.responsive .showcase_gamecollector_games .showcase_gamecollector_game:nth-c
 	padding: 9px 11px 10px;
 	background-color:  var(--gradient-background);
 	border-radius: 3px;
-	/*border-top: 1px solid #48515f;*/
 
 	margin-top: 9px;
 }
@@ -3355,4 +3325,12 @@ body.flat_page .sectionTabsHR {
 	padding: 0px 12px 12px 12px;
 	font-size: 14px;
 	color: #fff;
+}
+
+.whiteLink {
+    color: #ebebeb;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+	
 }
